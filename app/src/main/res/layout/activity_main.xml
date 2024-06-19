@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+
+
+<!-- 주문 유형 선택 텍스트 -->
+<TextView
+    android:id="@+id/tvOrderType"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:text="주문방법을 선택해주세요"
+    android:textSize="35sp"
+    android:textColor="@android:color/black"
+    android:textStyle="bold"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/buttonsLayout"
+    app:layout_constraintHeight_percent="0.1"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintVertical_bias="0.5"/>
+
+<!-- 버튼 레이아웃 -->
+<LinearLayout
+    android:id="@+id/buttonsLayout"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    app:layout_constraintTop_toBottomOf="@id/tvOrderType"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHeight_percent="0.67">
+
+    <!-- 매장 주문 버튼 -->
+
+    <!-- 테이크아웃 주문 버튼 -->
+    <Button
+        android:id="@+id/btnDineIn"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Primary"
+        android:layout_width="0dp"
+        android:layout_height="437dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/design_default_color_secondary"
+
+        android:padding="16dp"
+        android:text="매장"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnTakeOut"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Surface"
+        android:layout_width="0dp"
+        android:layout_height="437dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/button_color"
+        android:padding="16dp"
+        android:text="테이크아웃"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
