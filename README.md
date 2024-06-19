@@ -1,4 +1,5 @@
-# 1. 프로젝트 HASOME PLACE
+# 1. 프로젝트 HASOME PLACE  
+![sdf](./캡처7.JPG)
 
 ## 1.1 프로젝트 소개
 카페 키오스크 어플리케이션 
