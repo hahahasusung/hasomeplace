@@ -8,13 +8,13 @@ public class MenuItem implements Parcelable {
     private int price;
     private int quantity;
 
-    private int imageResId; // Assuming you have an image resource ID for the item
+    private int imageResId;
 
     public MenuItem(String name, int price, int imageResId) {
         this.name = name;
         this.price = price;
         this.imageResId = imageResId;
-        this.quantity = 0; // Initial quantity is 0
+        this.quantity = 0;
     }
 
     protected MenuItem(Parcel in) {

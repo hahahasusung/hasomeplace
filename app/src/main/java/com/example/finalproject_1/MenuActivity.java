@@ -102,7 +102,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        // Set initial category
+
         updateMenuItems("커피");
     }
     private void startVoiceRecognition() {

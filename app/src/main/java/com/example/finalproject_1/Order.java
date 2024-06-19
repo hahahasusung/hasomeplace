@@ -9,7 +9,7 @@ public class Order {
     private int totalPrice;
 
     public Order() {
-        // Default constructor required for calls to DataSnapshot.getValue(Order.class)
+
     }
 
     public Order(String orderId, String orderType, List<MenuItem> items, int totalPrice) {
@@ -19,7 +19,7 @@ public class Order {
         this.totalPrice = totalPrice;
     }
 
-    // Getters and setters
+
     public String getOrderType() {
         return orderType;
     }
